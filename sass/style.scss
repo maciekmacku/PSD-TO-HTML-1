@@ -99,7 +99,6 @@ img {
     text-align: center;
     h2 {
         color: #0149a1;
-        font-family: "Roboto - Bold";
         font-size: 72px;
         font-weight: 700;
         margin: 0;
@@ -192,17 +191,20 @@ img {
         line-height: 1.6em;
     }
     p {
-
+        color: #7c8ca0;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.5em;
     }
-
 }
 
-/*
-.btn {
-    position: absolute;
-    margin-top: -50px;
 
-}
-.btn-default {
-    
-} */
+
+/* Style for "Rounded Re" 
+width: 240px;
+height: 60px;
+box-shadow: 0 0 134px 27px #ffffff;
+border-radius: 30px;
+background-color: #0149a1;
+
+*/
