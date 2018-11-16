@@ -4,7 +4,7 @@ body {
   color: #7c8ca0;
 }
 
-/* links */
+/* HEADER links */
 a {
   color: #7c8ca0;
   text-decoration: none;
@@ -97,6 +97,91 @@ img {
   background-image: url(../images/twitter.png);
 }
 
-/* 16:35 from youtube , why fb and twitter doesnt show?*/
+/* section */
+.section-header {
+  text-align: center;
+  margin-top: 135px;
+}
+
+.section-header h2 {
+  color: #0149a1;
+  font-family: "Roboto - Bold";
+  font-size: 72px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-header p {
+  color: #5d6981;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin: 26px 0 0;
+}
+
+/*page section*/
+.page-section {
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #edeff1 0%, #edeff1 1%, #ffffff 24%, #e2e4e8 31%, #ffffff 100%);
+}
+
+/*intro CTA */
+.intro-cta {
+  text-align: center;
+  margin-top: 105px;
+  margin-bottom: 115px;
+}
+
+.intro-cta a {
+  display: inline-block;
+  padding: 22px 68px 20px;
+  border-radius: 30px;
+  background-color: #ff2d55;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+/*intro video*/
+.intro-video {
+  max-width: 1330px;
+  width: 100%;
+  margin: 0 auto;
+  background: url("../images/chat.png") no-repeat left 55px, url(../images/light.png) no-repeat right 55px;
+}
+
+.intro-video-image {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1094px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.intro-video-image .btn-default {
+  position: absolute;
+  top: 232px;
+  color: #0149a1;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding: 20px 45px;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+/*
+.btn {
+    position: absolute;
+    margin-top: -50px;
+
+}
+.btn-default {
+    
+} */
 
 /*# sourceMappingURL=style.css.map */
