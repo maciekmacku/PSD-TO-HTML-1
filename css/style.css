@@ -2,6 +2,13 @@
 body {
   font: 300 18px / 1.6em Roboto, Arial, sans-serif;
   color: #7c8ca0;
+  box-sizing: border-box;
+  max-width: 2000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 /* HEADER links */
@@ -21,7 +28,7 @@ img {
 
 /*grid */
 .container {
-  max-width: 1170px;
+  max-width: 2000px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -31,6 +38,8 @@ img {
   display: flex;
   justify-content: center;
   padding: 25px 0;
+  max-width: 1170px;
+  margin: 0 auto;
   width: 100%;
   height: 100px;
   border-bottom: 1px solid #e4e6ea;
@@ -123,7 +132,7 @@ img {
 /*page section*/
 .page-section {
   background-color: #ffffff;
-  background-image: linear-gradient(to top, #edeff1 0%, #edeff1 1%, #ffffff 24%, #e2e4e8 31%, #ffffff 100%);
+  background-image: linear-gradient(to top, #edeff1 0%, #edeff1 1%, #ffffff 24%, #e2e4e8 31%, #ffffff 50%);
 }
 
 .intro-section {
@@ -184,6 +193,7 @@ img {
 .feature-boxes .container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .feature-box {
@@ -210,13 +220,94 @@ img {
   line-height: 1.5em;
 }
 
-/* Style for "Rounded Re" 
-width: 240px;
-height: 60px;
-box-shadow: 0 0 134px 27px #ffffff;
-border-radius: 30px;
-background-color: #0149a1;
+/*creativity - section */
+.creativity-box {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  max-width: 2005px;
+  width: 100%;
+}
 
-*/
+.creativity-box a {
+  position: absolute;
+  top: 355px;
+  color: #ffffff;
+  padding: 20px 70px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.6em;
+  box-shadow: 0 0 134px 27px #ffffff;
+  border-radius: 30px;
+  background-color: #0149a1;
+}
+
+/* work section */
+.how-work {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #0149a1;
+  max-width: 2005px;
+  width: 100%;
+  max-height: 920px;
+}
+
+.how-work .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.how-work .container .header-work {
+  padding: 0;
+}
+
+.how-work .container .header-work h3 {
+  margin-top: 126px;
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.how-work .container .header-work p {
+  margin-top: 10px;
+  color: #5483bb;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 2.5em;
+  font-weight: 300;
+}
+
+.how-work .container .image-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.how-work .container .image-text img {
+  margin-top: 53px;
+  margin-bottom: 100px;
+  margin-right: 55px;
+  max-width: 517px;
+  height: auto;
+}
+
+.how-work .container .image-text p {
+  max-width: 559px;
+  text-align: left;
+}
+
+.how-work .container a {
+  margin: 0 auto 130px;
+  color: #0149a1;
+  padding: 22px 68px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
 
 /*# sourceMappingURL=style.css.map */
