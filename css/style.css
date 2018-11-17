@@ -251,7 +251,7 @@ img {
   background-color: #0149a1;
   max-width: 2005px;
   width: 100%;
-  max-height: 920px;
+  height: auto;
 }
 
 .how-work .container {
@@ -300,8 +300,11 @@ img {
   text-align: left;
 }
 
-.how-work .container a {
-  margin: 0 auto 130px;
+.how-work .container .btn-price {
+  margin-bottom: 130px;
+}
+
+.how-work .container .btn-price a {
   color: #0149a1;
   padding: 22px 68px;
   font-size: 18px;
@@ -309,5 +312,63 @@ img {
   border-radius: 30px;
   background-color: #ffffff;
 }
+
+/* one person section */
+.main-person-box {
+  max-width: 2000px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.main-person-box .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-person-box .container .person-image {
+  margin: 105px auto 49px;
+}
+
+.main-person-box .container .carousel-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.main-person-box .container .carousel-box .c-left {
+  justify-content: flex-start;
+  background-image: url(../images/btn-left.png);
+  background-repeat: no-repeat;
+}
+
+.main-person-box .container .carousel-box .text-kowalski {
+  max-width: 570px;
+  color: #7c8ca0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+.main-person-box .container .carousel-box .text-kowalski .kowalski {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.main-person-box .container .carousel-box .text-kowalski .kowalski .windu {
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.main-person-box .container .carousel-box .c-right {
+  justify-content: flex-end;
+  right: 416px;
+  background-image: url(../images/btn-right.png);
+  background-repeat: no-repeat;
+}
+
+/*our team section */
 
 /*# sourceMappingURL=style.css.map */

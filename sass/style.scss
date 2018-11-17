@@ -241,7 +241,7 @@ img {
     background-color: #0149a1;
     max-width: 2005px;
     width: 100%;
-    max-height: 920px;
+    height: auto;
     .container {
         display: flex;
         flex-direction: column;
@@ -280,20 +280,76 @@ img {
                 text-align: left;
             }
         }   
-        a {
-            margin: 0 auto 130px;
-            color: #0149a1;
-            padding: 22px 68px;
-            font-size: 18px;
-            font-weight: 700;
-            border-radius: 30px;
-            background-color: #ffffff;
-
+        .btn-price {
+            margin-bottom: 130px;
+            a {
+                color: #0149a1;
+                padding: 22px 68px;
+                font-size: 18px;
+                font-weight: 700;
+                border-radius: 30px;
+                background-color: #ffffff;
+    
+            }
         }
+       
     }
 }
-    
+/* one person section */
+.main-person-box {
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 ;
+    padding: 0;
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .person-image {
+            margin: 105px auto 49px;
+        }
+       .carousel-box {
+           display:flex;
+           justify-content: center;
+           flex-direction: row;
+           
+           .c-left {
+               justify-content: flex-start;
+               background-image: url(../images/btn-left.png); 
+               background-repeat: no-repeat;
+           }
+           
+           .text-kowalski {
+                max-width: 570px;
+                color: #7c8ca0;
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 1.2em;
+                 .kowalski {
+                    font-size: 18px;
+                    font-weight: 300;
+                    .windu {
+                        font-size: 18px;
+                        font-weight: 300;
+                        text-decoration: underline;
+                    }
+                    
+               }
+            
+           }
+           .c-right {
+            justify-content: flex-end;
+            right: 416px;
+            
+            background-image: url(../images/btn-right.png); 
+            background-repeat: no-repeat;
+        }
+       }
+       .c-options {
 
+       }   
+    }  
+}
 
-
+/*our team section */
 
