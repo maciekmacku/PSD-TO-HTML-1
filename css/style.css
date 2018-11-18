@@ -314,59 +314,53 @@ img {
 }
 
 /* one person section */
-.main-person-box {
-  max-width: 2000px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 .main-person-box .container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.main-person-box .container .person-image {
-  margin: 105px auto 49px;
-}
-
-.main-person-box .container .carousel-box {
+  max-width: 2000px;
+  padding: 0;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-.main-person-box .container .carousel-box .c-left {
-  justify-content: flex-start;
-  background-image: url(../images/btn-left.png);
-  background-repeat: no-repeat;
+.main-person-box .container .c-left {
+  margin-top: 280px;
+  margin-right: 226px;
 }
 
-.main-person-box .container .carousel-box .text-kowalski {
-  max-width: 570px;
+.main-person-box .container .person-image {
+  text-align: center;
+  margin-top: 105px;
+  margin-bottom: 78px;
+}
+
+.main-person-box .container .person-image img {
+  margin-bottom: 50px;
+}
+
+.main-person-box .container .person-image .add-comment {
+  max-width: 576px;
   color: #7c8ca0;
   font-size: 24px;
-  font-weight: 300;
-  line-height: 1.2em;
+  font-weight: 400;
+  line-height: 1.3em;
 }
 
-.main-person-box .container .carousel-box .text-kowalski .kowalski {
+.main-person-box .container .person-image .kowalski {
   font-size: 18px;
   font-weight: 300;
 }
 
-.main-person-box .container .carousel-box .text-kowalski .kowalski .windu {
+.main-person-box .container .person-image .kowalski .windu {
   font-size: 18px;
   font-weight: 300;
   text-decoration: underline;
 }
 
-.main-person-box .container .carousel-box .c-right {
-  justify-content: flex-end;
-  right: 416px;
-  background-image: url(../images/btn-right.png);
-  background-repeat: no-repeat;
+.main-person-box .container .c-right {
+  margin-top: 280px;
+  margin-left: 226px;
 }
 
 /*our team section */

@@ -282,58 +282,48 @@ img {
 }
 /* one person section */
 .main-person-box {
-    max-width: 2000px;
-    width: 100%;
-    margin: 0 ;
-    padding: 0;
     .container {
+        max-width: 2000px;
+        padding: 0;
+        width:100%;
+        height: auto;
         display: flex;
-        flex-direction: column;
-        text-align: center;
+        justify-content: center;
+        
+        flex-direction: row;
+        .c-left {
+            margin-top: 280px;
+            margin-right: 226px;
+        }
         .person-image {
-            margin: 105px auto 49px;
-        }
-       .carousel-box {
-           display:flex;
-           justify-content: center;
-           flex-direction: row;
-           
-           .c-left {
-               justify-content: flex-start;
-               background-image: url(../images/btn-left.png); 
-               background-repeat: no-repeat;
+            text-align: center;
+            margin-top: 105px;
+            margin-bottom: 78px;
+            img {
+                margin-bottom: 50px;
+            }
+           .add-comment {
+               max-width: 576px;
+               color: #7c8ca0;
+               font-size: 24px;
+               font-weight: 400;
+               line-height: 1.3em;
            }
-           
-           .text-kowalski {
-                max-width: 570px;
-                color: #7c8ca0;
-                font-size: 24px;
-                font-weight: 300;
-                line-height: 1.2em;
-                 .kowalski {
-                    font-size: 18px;
-                    font-weight: 300;
-                    .windu {
-                        font-size: 18px;
-                        font-weight: 300;
-                        text-decoration: underline;
-                    }
-                    
+           .kowalski {
+               font-size: 18px;
+               font-weight: 300;
+               .windu {
+                   font-size: 18px;
+                   font-weight: 300;
+                   text-decoration: underline;                
                }
-            
-           }
-           .c-right {
-            justify-content: flex-end;
-            right: 416px;
-            
-            background-image: url(../images/btn-right.png); 
-            background-repeat: no-repeat;
+           }  
         }
-       }
-       .c-options {
-
-       }   
-    }  
+        .c-right {
+            margin-top: 280px;
+            margin-left: 226px;    
+        }
+    }
 }
 /*our team section */
 .people-box {
