@@ -28,6 +28,7 @@ img {
 
 /*grid */
 .container {
+  display: flex;
   max-width: 2000px;
   width: 100%;
   margin: 0 auto;
@@ -41,7 +42,7 @@ img {
   max-width: 1170px;
   margin: 0 auto;
   width: 100%;
-  height: 100px;
+  height: auto;
   border-bottom: 1px solid #e4e6ea;
 }
 
@@ -61,11 +62,11 @@ img {
 
 /* menu */
 .menu-items {
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  align-items: center;
 }
 
 .menu-items li {
@@ -83,17 +84,6 @@ img {
   font-weight: 400;
 }
 
-.menu-items .active {
-  border-radius: 36px;
-  border: 1px solid #9fabba;
-}
-
-/* menu icon */
-.menu-items {
-  display: flex;
-  align-items: center;
-}
-
 .menu-items .menu-icon a {
   background-repeat: no-repeat;
   height: 46px;
@@ -101,6 +91,12 @@ img {
   padding: 0;
 }
 
+.menu-items .active {
+  border-radius: 36px;
+  border: 1px solid #9fabba;
+}
+
+/* menu icon */
 .facebook-icon {
   background-image: url(../images/facebook.png);
 }
@@ -119,6 +115,7 @@ img {
   font-size: 72px;
   font-weight: 700;
   margin: 0;
+  line-height: 0.9em;
 }
 
 .section-header p {
@@ -163,6 +160,7 @@ img {
   max-width: 1330px;
   width: 100%;
   margin: 0 auto;
+  height: 100%;
   background: url("../images/chat.png") no-repeat left 55px, url(../images/light.png) no-repeat right 55px;
 }
 
@@ -178,6 +176,7 @@ img {
 }
 
 .intro-video-image .btn-default {
+  display: flex;
   position: absolute;
   top: 232px;
   color: #0149a1;
@@ -371,6 +370,7 @@ img {
   max-width: 2000px;
   width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 .people-box .meet-box {
@@ -397,15 +397,17 @@ img {
 .people-box .team-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0 430px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .people-box .team-box .team-box-4 {
+  border: 2px solid red;
+  max-width: 251px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 24px 0;
+  margin: 0 25px;
 }
 
 .people-box .team-box .team-box-4 img:hover {
@@ -460,6 +462,7 @@ img {
 .class-footer {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 2000px;
   width: 100%;
@@ -471,12 +474,16 @@ img {
 .class-footer .text-footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 90px;
 }
 
 .class-footer .text-footer p {
-  width: 141px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  max-width: 141px;
   margin: 0 80px 0;
   color: #ffffff;
   font-size: 18px;
@@ -500,6 +507,36 @@ img {
 .class-footer .text-footer-symu p a {
   font-weight: 700;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .page-header .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+  .intro-video-image .btn-default {
+    display: flex;
+    position: absolute;
+    top: 40px;
+  }
+  .feature-boxes {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .how-work .container .image-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
