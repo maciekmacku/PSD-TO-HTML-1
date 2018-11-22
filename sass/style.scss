@@ -241,6 +241,7 @@ img {
                 margin-bottom: 5px;
                 color: #ffffff;
                 font-size: 72px;
+                line-height: 1 em;
                 font-weight: 700;
             }
             p {
@@ -341,6 +342,7 @@ img {
         flex-direction: column;
         align-items: center;
         h3 {
+            display: flex;
             margin: 138px auto 0;
             color: #0149a1;
             font-size: 72px;
@@ -362,7 +364,6 @@ img {
         flex-wrap: wrap;
         
         .team-box-4 {
-            border: 2px solid red;
             max-width: 251px;
             display:flex;
             flex-direction: column;
